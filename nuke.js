@@ -37,7 +37,7 @@ async function nuke() {
     if (message.author.id === userId) await deleteMessage(message);
     remaining.push(message.id);
   };
-  lastMessageId = String(remaining.sort((a, b) => a - b)[0]);
+  lastMessageId = remaining.sort((a, b) => a - b)[0];
   await sleep(sleepTime);
   nuke();
 }
