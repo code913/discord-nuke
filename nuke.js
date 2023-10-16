@@ -44,7 +44,7 @@ async function nuke() {
 
 async function deleteMessage(message) {
   console.log(message.content);
-  await sleep(sleepTime * (Math.random() + 1));
+  await sleep(sleepTime * (Math.random() + 1);
   return await fetch(`https://discord.com/api/v9/channels/${channelId}/messages/${message.id}`, {
     headers,
     referrer: `https://discord.com/channels/@me/${channelId}`,
